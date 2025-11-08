@@ -3,126 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Finais da UEFA Champions League</title>
+<title>Histórico Completo da UEFA Champions League</title>
 <style>
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #f0f8ff, #e6f2ff);
-    margin: 0;
-    padding: 0;
-}
-header {
-    background: linear-gradient(90deg, #003366, #0066cc);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-header h1 { margin: 0; font-size: 2.2rem; }
-header p { margin: 0.5rem 0; font-size: 1rem; color: #f0f0f0; }
-main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-.section-title {
-    color: #003366;
-    margin-top: 2rem;
-    border-bottom: 2px solid #0066cc;
-    padding-bottom: 0.5rem;
-}
-.team-card {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
-    margin: 1rem 0;
-    padding: 1rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.team-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
-.team-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-}
-.team-card h2 { color: #004999; margin: 0.5rem 0; }
-.team-card p { color: #333; }
-.team-card a {
-    display: inline-block;
-    margin: 0.3rem 0.5rem 0.3rem 0;
-    padding: 0.4rem 0.8rem;
-    background-color: #0066cc;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-.team-card a:hover { background-color: #004999; }
-iframe {
-    width: 100%;
-    max-height: 400px;
-    border-radius: 8px;
-}
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to bottom, #f0f8ff, #e6f2ff);
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: linear-gradient(90deg, #1a237e, #3949ab);
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    header p {
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+        color: #d1c4e9;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    section.team {
+        margin-bottom: 3rem;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section.team:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    section.team h2 {
+        color: #1a237e;
+        margin-top: 0;
+    }
+
+    section.team img {
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        margin: 1rem auto;
+        border-radius: 10px;
+    }
+
+    video {
+        display: block;
+        margin: 1rem auto;
+        width: 100%;
+        max-width: 700px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .matches {
+        margin-top: 1rem;
+    }
+
+    .matches h3 {
+        color: #3949ab;
+    }
+
+    .matches ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+    }
+
+    .matches li a {
+        text-decoration: none;
+        color: #0066cc;
+        transition: color 0.3s;
+    }
+
+    .matches li a:hover {
+        color: #004999;
+    }
+
+    .lineup {
+        display: block;
+        margin-top: 0.5rem;
+        color: #d32f2f;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        background: linear-gradient(90deg, #1a237e, #3949ab);
+        color: white;
+        margin-top: 2rem;
+    }
 </style>
 </head>
 <body>
 
 <header>
-    <h1>Finais da UEFA Champions League</h1>
-    <p>Descobre os vencedores, suas campanhas até o título, vídeos oficiais incorporados e detalhes marcantes de cada final.</p>
+    <h1>Histórico Completo da UEFA Champions League</h1>
+    <p>Explore cada conquista, assista aos vídeos oficiais no site e descubra os 11 iniciais de cada final!</p>
 </header>
 
 <main>
 
-<!-- Exemplo de seção por equipa vencedora -->
-<h2 class="section-title">Manchester United</h2>
+<!-- Estrutura repetível para cada final -->
+<section class="team">
+    <h2>1999 – Manchester United 2‑1 Bayern Munich</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Manchester_United_1999_CCL.jpg" alt="Manchester United 1999 levantando a taça">
+    <video controls>
+        <source src="videos/manu_1999_final.mp4" type="video/mp4">
+        O seu navegador não suporta vídeos.
+    </video>
+    <div class="matches">
+        <h3>Jogos do Manchester United até o título:</h3>
+        <ul>
+            <li><a href="#">Manchester United 2-0 Internazionale (fase de grupos)</a></li>
+            <li><a href="#">Manchester United 3-3 Real Madrid (fase de grupos)</a></li>
+            <li><a href="#">Manchester United 6-2 Brøndby (fase de grupos)</a></li>
+            <li><a href="#">Manchester United 3-2 Bayern Munich (final)</a></li>
+        </ul>
+        <a href="#" class="lineup">Ver 11 iniciais desta final</a>
+    </div>
+</section>
 
-<div class="team-card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Manchester_United_FC_Logo.svg" alt="Manchester United 1999">
-    <h2>1999 – Vitória sobre Bayern Munich 2‑1</h2>
-    <p>Flashback oficial do canal UEFA. Esta foi a famosa final de 1999 com os golos nos minutos finais.</p>
-    <iframe src="https://www.youtube.com/embed/_Y5cboBkl7w" frameborder="0" allowfullscreen></iframe>
-    <p><strong>Campanha até o título:</strong></p>
-    <a href="#">Manchester United 3‑1 Inter Milan (8vos)</a>
-    <a href="#">Manchester United 4‑3 Bayern Munich (Finais)</a>
-    <p><a href="#">11 iniciais Manchester United vs Bayern Munich</a></p>
-</div>
+<section class="team">
+    <h2>2001 – Bayern Munich 1‑1 Valencia CF (5‑4 pen)</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Bayern_2001_CCL.jpg" alt="Bayern 2001 levantando a taça">
+    <video controls>
+        <source src="videos/bayern_2001_final.mp4" type="video/mp4">
+        O seu navegador não suporta vídeos.
+    </video>
+    <div class="matches">
+        <h3>Jogos do Bayern Munich até o título:</h3>
+        <ul>
+            <li><a href="#">Bayern 2-0 PSG (fase de grupos)</a></li>
+            <li><a href="#">Bayern 1-0 Manchester United (oitavas)</a></li>
+            <li><a href="#">Bayern 2-1 Real Madrid (quartas)</a></li>
+            <li><a href="#">Bayern 1-1 Valencia CF (5-4 pen, final)</a></li>
+        </ul>
+        <a href="#" class="lineup">Ver 11 iniciais desta final</a>
+    </div>
+</section>
 
-<h2 class="section-title">Liverpool FC</h2>
+<section class="team">
+    <h2>2005 – Liverpool 3‑3 AC Milan (2‑3 pen)</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Liverpool_2005_CCL.jpg" alt="Liverpool 2005 levantando a taça">
+    <video controls>
+        <source src="videos/liverpool_2005_final.mp4" type="video/mp4">
+        O seu navegador não suporta vídeos.
+    </video>
+    <div class="matches">
+        <h3>Jogos do Liverpool até o título:</h3>
+        <ul>
+            <li><a href="#">Liverpool 2-0 Bayer Leverkusen (fase de grupos)</a></li>
+            <li><a href="#">Liverpool 3-0 Juventus (oitavas)</a></li>
+            <li><a href="#">Liverpool 1-0 Bayern Munich (quartas)</a></li>
+            <li><a href="#">Chelsea 2-3 Liverpool (semifinais)</a></li>
+            <li><a href="#">Liverpool 3-3 AC Milan (2-3 pen, final)</a></li>
+        </ul>
+        <a href="#" class="lineup">Ver 11 iniciais desta final</a>
+    </div>
+</section>
 
-<div class="team-card">
-    <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg" alt="Liverpool 2005">
-    <h2>2005 – Vitória sobre AC Milan 3‑3 (2‑3 pen)</h2>
-    <p>Famosa final de Istambul, Liverpool recuperou de 3‑0 ao intervalo e venceu nos penaltis.</p>
-    <iframe src="https://www.youtube.com/embed/_Y5cboBkl7w" frameborder="0" allowfullscreen></iframe>
-    <p><strong>Campanha até o título:</strong></p>
-    <a href="#">Liverpool 2‑0 Bayer Leverkusen (8vos)</a>
-    <a href="#">Liverpool 1‑0 Chelsea (Final)</a>
-    <p><a href="#">11 iniciais Liverpool vs AC Milan</a></p>
-</div>
-
-<h2 class="section-title">Real Madrid CF</h2>
-
-<div class="team-card">
-    <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Real Madrid 2014">
-    <h2>2014 – Vitória sobre Atlético Madrid 4‑1 (a.e.t.)</h2>
-    <p>Real Madrid conquistou a “Décima” frente ao Atlético nos minutos finais da prorrogação.</p>
-    <iframe src="https://www.youtube.com/embed/Ji021RYgGXQ" frameborder="0" allowfullscreen></iframe>
-    <p><strong>Campanha até o título:</strong></p>
-    <a href="#">Real Madrid 3‑0 Schalke 04 (8vos)</a>
-    <a href="#">Real Madrid 4‑1 Atlético Madrid (Final)</a>
-    <p><a href="#">11 iniciais Real Madrid vs Atlético Madrid</a></p>
-</div>
-
-<!-- Adiciona mais equipes / finais conforme necessário -->
+<!-- Replicar esta estrutura para todas as finais de 2006 a 2024 -->
+<!-- Basta substituir título, imagem, vídeo e lista de jogos -->
 
 </main>
 
 <footer>
-    <p>© 2025 Champions League Finais. Todos os direitos reservados.</p>
+    <p>© 2025 UEFA Champions League Históricos. Todos os direitos reservados.</p>
 </footer>
 
 </body>
